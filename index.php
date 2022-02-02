@@ -154,8 +154,12 @@ $res=($strp[0]==1||$strp[0]==2||$strp[0]==3)? 'yes' : 'No';
     </div>
     <div class="otvet">
 <? 
-
+$year=(rand(1,9).rand(0,9).rand(0,9).rand(0,9));
+if(($year % 4 ==0) and ($year % 100 != 0) or ($year % 400 == 0))
+    echo '<h1>Ответ:</h1>'.'високосный год';
+    else echo '<h1>Ответ:</h1>'. 'не високосный';
 ?>
+<h3>год: <?=$year?></h3>
     </div>  
     </div>  
     <div class="zadanie">
@@ -165,8 +169,13 @@ $res=($strp[0]==1||$strp[0]==2||$strp[0]==3)? 'yes' : 'No';
     </div>
     <div class="otvet">
 <? 
-
+$month=(rand(1,12));
+    if($month<2 or $month==12)echo '<h1>Ответ:</h1>'. 'winter';
+    if($month>2 and $month<6)echo '<h1>Ответ:</h1>'. 'spring';
+    if($month>5 and $month<9)echo '<h1>Ответ:</h1>'. 'summer';
+    if($month>8 and $month<11)echo '<h1>Ответ:</h1>'. 'autumn';
 ?>
+<h3>месяц/12: <?=$month?></h3>
     </div>  
     </div>  
     <div class="zadanie">
@@ -175,6 +184,8 @@ $res=($strp[0]==1||$strp[0]==2||$strp[0]==3)? 'yes' : 'No';
     </div>
     <div class="otvet">
 <? 
+$a=0;
+while ($a<100) echo ($a=$a+1 );
 
 ?>
     </div>  
@@ -185,7 +196,8 @@ $res=($strp[0]==1||$strp[0]==2||$strp[0]==3)? 'yes' : 'No';
     </div>
     <div class="otvet">
 <? 
-
+$a=10;
+while ($a<33) echo ($a=$a+1 );
 ?>
     </div>  
     </div>  
@@ -195,7 +207,8 @@ $res=($strp[0]==1||$strp[0]==2||$strp[0]==3)? 'yes' : 'No';
     </div>
     <div class="otvet">
 <? 
-
+$a=0;
+while ($a<100 and ($a % 2 == 0))  echo ($a=$a+2);
 ?>
     </div>  
     </div>  
@@ -205,6 +218,10 @@ $res=($strp[0]==1||$strp[0]==2||$strp[0]==3)? 'yes' : 'No';
     </div>
     <div class="otvet">
 <? 
+//$a=0;
+//$b=1;
+//for($a=1,$b=1;$a<100;$a++) 
+   //if ($a<100) echo ($b=$a+1);
 
 ?>
     </div>  
