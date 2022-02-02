@@ -86,12 +86,11 @@ $c= 'мне ' . $age . ' лет!';
     </div>
     <div class="otvet">
 <? 
-$a=2;
-if($a<10){echo 'неверно';}
-  else {echo 'неверно';}
-
+$a=10;
+if($a<10){echo '<h3>Ответ:</h3> ' .$a. ' неверно';}
+    else if ($a>10){echo '<h3>Ответ:</h3> ' .$a. ' неверно';}
+    else if ($a==10){echo '<h3>Ответ:</h3> ' .$a. ' верно';}
 ?>
-<h3>Ответ: <?=?></h3>
     </div>  
     </div>  
     <div class="zadanie">
@@ -102,7 +101,15 @@ if($a<10){echo 'неверно';}
     </div>
     <div class="otvet">
 <? 
-
+$min=(rand(0,59));
+    if ($min<15 and $min>0 ){
+        echo '<h1>Ответ</h1> 1 четверть';}
+    if ($min<30 and $min>15 ){
+        echo '<h1>Ответ</h1>2 четверть';}
+    if ($min<45 and $min>30 ){
+        echo '<h1>Ответ</h1>3 четверть';}
+    if ($min<59 and $min>45 ){
+        echo '<h1>Ответ</h1>4 четверть';}
 ?>
     </div>
     </div>  
@@ -114,7 +121,11 @@ if($a<10){echo 'неверно';}
     </div>
     <div class="otvet">
 <? 
-
+$num=(rand(1,4));
+if ($num==1) {echo '<h1>Ответ</h1>' .$result='winter';}
+if ($num==2) {echo '<h1>Ответ</h1>' .$result='summer';}
+if ($num==3) {echo '<h1>Ответ</h1>' .$result='autumn';}
+if ($num==4) {echo '<h1>Ответ</h1>' .$result='spring';}
 ?>
     </div>
     </div>  
@@ -126,7 +137,9 @@ if($a<10){echo 'неверно';}
     </div>
     <div class="otvet">
 <? 
-
+$strp=(rand(1,20).rand(1,20).rand(1,20).rand(1,20).rand(1,20));
+$res=($strp[0]==1||$strp[0]==2||$strp[0]==3)? 'yes' : 'No';
+    echo $res;
 ?>
     </div>  
     </div>  
