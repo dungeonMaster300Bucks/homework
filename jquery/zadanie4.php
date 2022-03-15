@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="http://code.jquery.com/jquery-latest.js">
+<script src="../bootstrap/js/jquery-3.6.0.min.js">
 </script>
 <script>
  $(document).ready(function () {
