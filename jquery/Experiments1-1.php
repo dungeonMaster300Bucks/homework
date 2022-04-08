@@ -20,11 +20,11 @@ $(document).ready(function ()
  {
    $("#but1").click(function () 
      {
-       $(".MsoNormal:odd").hide();
+       $("td:odd").hide();
      });
    $("#but2").click(function ()
      {
-       $(".MsoNormal:odd").show();
+       $("td:odd").show();
      });
  });
 </script>
@@ -32,11 +32,13 @@ $(document).ready(function ()
 </head>
 <body>
   <div class="container col-md-12">
-    <button id="but1" class="btn-danger">Click me</button>
-    <button id="but2" class="btn-danger">Click me for show</button>
-    <p class="MsoNormal h2">0</p>
-    <p class="MsoNormal h2">1</p>
-    <p class="MsoNormal h2">2</p>
+    <table>
+      <button id="but1" class="btn-danger">Click me</button>
+      <button id="but2" class="btn-danger">Click me for show</button>
+      <td class="h2">0</td>
+      <td class="h2">1</td>
+      <td class="h2">2</td>
+    </table>
   </div>
 
 

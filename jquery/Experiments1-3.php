@@ -11,7 +11,7 @@
       color:green; 
       height:auto; 
       } 
-       </style>
+       </style> 
 <script src="../bootstrap/js/jquery-3.6.0.min.js">
 </script>
 <script>
@@ -20,11 +20,11 @@ $(document).ready(function ()
  {
    $("#but1").click(function () 
      {
-       $(".MsoNormal:odd").hide();
+       $("[align='center']").hide();
      });
    $("#but2").click(function ()
      {
-       $(".MsoNormal:odd").show();
+       $("[align='center']").show();
      });
  });
 </script>
@@ -34,9 +34,11 @@ $(document).ready(function ()
   <div class="container col-md-12">
     <button id="but1" class="btn-danger">Click me</button>
     <button id="but2" class="btn-danger">Click me for show</button>
-    <p class="MsoNormal h2">0</p>
-    <p class="MsoNormal h2">1</p>
-    <p class="MsoNormal h2">2</p>
+    
+    <p class="h2" align="center">0</p>
+    <p class="h2" align="center">1</p>
+    <p class="h2" align="center">2</p>
+  
   </div>
 
 
